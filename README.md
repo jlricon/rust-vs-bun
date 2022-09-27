@@ -212,9 +212,6 @@ Status code distribution:
 `cargo run --release --bin actix_bench`
 
 ```
-
-```
-
 Summary:
 Total: 56.4581 secs
 Slowest: 0.9353 secs
@@ -260,6 +257,7 @@ Status code distribution:
 ```
 
 `cargo run --release --bin salvo`
+
 ```
 
 Summary:
@@ -307,6 +305,7 @@ Status code distribution:
 ```
 
 `cargo run --release --bin may`
+
 ```
 
 Summary:
@@ -354,6 +353,7 @@ Status code distribution:
 ```
 
 `cargo run --release --bin xitca`
+
 ```
 
 Summary:
@@ -397,7 +397,5 @@ resp read: 0.0003 secs, 0.0000 secs, 0.1047 secs
 
 Status code distribution:
 [200] 1000000 responses
-
-```
 
 ```
