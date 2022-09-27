@@ -11,13 +11,21 @@ info: This is the version for the rustup toolchain manager, not the rustc compil
 info: The currently active `rustc` version is `rustc 1.66.0-nightly (8b705839c 2022-09-26)`
 ```
 
-Using `hey -c 100 -n 5000000 http://localhost:3000`
+# Result summary (1)
 
-# Result summary
+Using `hey -c 100 -n 5000000 http://localhost:3000`
 
 | Bun  | Rocket | Actix (8 threads) | Actix (4 threads) | Actix (TechEmpower config, 8 th) | Hyper | Salvo | May  | Xitca |
 | ---- | ------ | ----------------- | ----------------- | -------------------------------- | ----- | ----- | ---- | ----- |
 | 41.5 | 53.4   | 54.8              | 44                | 56.45                            | 43.16 | 43.8  | 55.1 | 58.57 |
+
+# Results summary (2)
+
+Using `wrk -c 25 http://localhost:3000`
+
+- Actix: 145.8k rps (1 thread)
+- Actix: 186k rps (4 threads)
+- Bun: 178.4k rps (1 thread)
 
 # Results
 

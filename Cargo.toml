@@ -26,5 +26,3 @@ xitca-unsafe-collection = { git = "https://github.com/HFQR/xitca-web.git" }
 xitca-service = { git = "https://github.com/HFQR/xitca-web.git" }
 xitca-server = { git = "https://github.com/HFQR/xitca-web.git" }
 xitca-web = { git = "https://github.com/HFQR/xitca-web.git" }
-[profile.release]
-lto = true
