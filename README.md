@@ -14,6 +14,7 @@ info: The currently active `rustc` version is `rustc 1.66.0-nightly (8b705839c 2
 # Result summary (1)
 
 Using `hey -c 100 -n 5000000 http://localhost:3000`
+Using `cargo run --release`
 
 | Bun  | Rocket | Actix (8 threads) | Actix (4 threads) | Actix (TechEmpower config, 8 th) | Hyper | Salvo | May  | Xitca |
 | ---- | ------ | ----------------- | ----------------- | -------------------------------- | ----- | ----- | ---- | ----- |
@@ -22,9 +23,10 @@ Using `hey -c 100 -n 5000000 http://localhost:3000`
 # Results summary (2)
 
 Using `wrk -c 25 http://localhost:3000`
+Using `RUSTFLAGS='-C target-cpu=native' cargo run --release`
 
-- Actix: 145.8k rps (1 thread)
-- Actix: 186k rps (4 threads)
+- Actix: 153k rps (1 thread)
+- Actix: 192k rps (4 threads)
 - Bun: 178.4k rps (1 thread)
 
 # Results
