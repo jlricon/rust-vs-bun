@@ -28,6 +28,7 @@ Using `RUSTFLAGS='-C target-cpu=native' cargo run --release`
 - Actix: 153k rps (1 thread)
 - Actix: 192k rps (4 threads)
 - Bun: 178.4k rps (1 thread)
+- Hyper: 173.k rps (1 thread)
 
 # Results
 
